@@ -12,10 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require autosize.min
-//= require bootstrap
+//= require bootstrap/alert
+//= require bootstrap/dropdown
+//= require bootstrap/modal
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
+//= require autosize.min
+
+
 //= require_tree .
 
 
