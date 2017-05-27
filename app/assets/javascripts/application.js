@@ -34,7 +34,7 @@ $(window).scroll(function () {
     $('#gotop').fadeOut() // 否则慢慢地隐藏「回到顶部按钮」
 
   }
-}
+})
 
 
 // // 图片自适应大小支持代码块
@@ -46,7 +46,3 @@ $(window).scroll(function () {
       document.images[j].width=(document.images[j].width>420)?"420":document.images[j].width;
     }
   }
-
-
-
-  
