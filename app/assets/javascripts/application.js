@@ -11,15 +11,29 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
-
+//= require turbolinks
 //= require_tree .
 
 
 
+$(document).on('turbolinks:load', function() {
+  // 收起通知
+
+    slideUpAlert();
+});
+
+function slideUpAlert() {
+  // 消息停留2000毫秒（2秒），消失动画时间250毫秒
+
+  $(".alert").delay(2000).slideUp(250, function() {
+    $(this).remove();
+  });
+}
 
 //--- 回到顶部 ---
 $(document).on('click', '#gotop', function () {
