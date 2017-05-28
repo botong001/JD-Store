@@ -1,5 +1,4 @@
 
-        
 
           <!-- productList -->
           <div class="container">
@@ -48,27 +47,4 @@
     <div class="orderList-item "><h4><strong></strong></h4></div>
     <div class="orderList-item "><h4><strong></strong></h4></div>
     <div class="orderList-item "><h4><strong></strong></h4></div>
-  </div>
-
-
-   头部
-  <div class="header">
-    <div class="headerContent">
-      <div class="cart-wrap">
-        <div class="cart">
-           <%= link_to carts_path do  %>
-              购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
-           <% end %>
-      </div>
-    </div>
-
-
-     <div class="search">
-        <%= form_tag search_products_path , :method => :get, :class => "products-search-form" do %>
-            <input name="utf8" type="hidden" value="✓">
-            <input type="text" class="search-input" name="q" value="<%= params[:q] %>" placeholder="输入你要搜索的商品">
-            <button type="submit" class="search-button pa tc"><i class="fa fa-search"></i></button>
-        <% end %>
-      </div>
-    </div>
   </div>-->

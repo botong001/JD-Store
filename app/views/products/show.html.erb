@@ -155,3 +155,38 @@
                   </div>
       </div>
   </div>
+
+
+  <div class="product-particulars-box row tab-pane" id="tab_default_2">
+            <%= simple_form_for ([@product, @comment]) do |f| %>
+                    <div class="review-comment-form">
+                          <%= f.input :content, :label => "添加评论" %>
+                    </div>
+                    <div class="review-comment-button">
+                          <%= f.submit "提交", class: "btn btn-sm btn-default", data: {disable_with: "Submiting..."} %>
+                    </div>
+            <% end %>
+            <hr>
+            <% if @comments.blank? %>
+                  <p>该商品暂时没有获得用户的评论</p>
+            <% else %>
+              <% @comments.each do |comment| %>
+                        <div class="reviews">
+                                <ul>
+                                      <li>
+                                              <div class="row">
+                                                    <div class="col-sm-9 review-user-email"><%= comment.user.email %></div>
+                                                    <div class="col-sm-3"><%= comment.created_at.strftime("%Y-%m-%d %H-%M-%S") %></div>
+                                              </div>
+                                              <div class="review-comment">
+                                                    <%= comment.content %>
+                                              </div>
+                                      </li>
+                                </ul>
+                                              <div class="review-hr">
+                                                   <hr>
+                                              </div>
+                        </div>
+              <% end %>
+            <% end %>
+  </div>
