@@ -68,7 +68,7 @@ gem 'bootstrap-wysihtml5-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 # debug
-#gem 'byebug', platform: :mri
+  gem 'byebug', platform: :mri
   gem 'pry'
 # 升级版金手指
   gem 'awesome_rails_console'
