@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
     @comment = Comment.new
   end
 
+# -- 加入购物车----
 
   def add_to_cart
      @product = Product.find(params[:id])
@@ -23,6 +24,7 @@ class ProductsController < ApplicationController
     end
      redirect_to :back
    end
+
 
   # --分类--
 

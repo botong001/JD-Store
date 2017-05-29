@@ -22,11 +22,12 @@
 
 
 $(document).on('turbolinks:load', function() {
-  // 收起通知
 
+  // 收起提示信息通知
     slideUpAlert();
 });
 
+// 提示信息通知
 function slideUpAlert() {
   // 消息停留2000毫秒（2秒），消失动画时间250毫秒
 
