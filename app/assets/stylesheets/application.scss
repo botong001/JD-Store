@@ -27,8 +27,8 @@
   }
 
   body {
-    padding-top: 71px;
-    padding-bottom: 450px;                                  // 腾出navbar的遮挡空间
+    padding-top: 71px;                                  // 腾出navbar的遮挡空间
+    padding-bottom: 117px;
     font-family: 'Noto Sans SC', sans-serif;            // google思源黑简作为主字体
     color: #666;                                        // 修改全站的 字体主色
     font-size: 1.5em;
@@ -137,7 +137,7 @@
       }
 
     .productList {
-     margin: 5em auto 3em;
+     margin: 1em auto 10em;
      display: block;
      background-color: #f5f5f5;
      border-radius: 3px;
