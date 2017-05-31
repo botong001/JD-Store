@@ -19,11 +19,11 @@
 
 
     .box-inner {
-        background-color: rgba(149, 149, 149, 0.69);
+        background-color: rgba(10, 15, 11, 0.69);
 
         margin-top: 100px;
         margin-bottom: 100px;
-        width: 700px;
+
         border-radius: 20px;
         padding-left: 28px;
 
@@ -64,17 +64,16 @@
         width: 45%;
         letter-spacing: 0.5em;
         font-size: 1.2em;
+        margin-bottom: 16px;
 
       }
         }
 
         .box2 {
           background-image: url('https://ws4.sinaimg.cn/large/006tNbRwgy1fg22076yi2j312r0akwku.jpg');
-          padding-top: 50px;
           background-repeat: no-repeat;
           background-size: cover;
-          margin-bottom: 80px;
-          padding-bottom: 50px;
+          padding-bottom: 106px;
           padding-top: 50px;
         }
 
@@ -100,11 +99,6 @@
          text-align: center;
 
        }
-
-
-
-
-
 
 
 }
