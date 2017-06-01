@@ -50,8 +50,43 @@
               </div>
             </div>
 
+            <!-- 排序功能 -->
 
-      <br><br><br>
+            <div class="orderList">
+              <div class="orderList-item ">
+                <h4><strong> <%= link_to("价格", products_path(:order => "by_price_high"), class: "btn btn-default") %></strong></h4>
+              </div>
+              <div class="orderList-item ">
+                <h4><strong><%= link_to("销量", products_path(:order => "by_price_low"), class: "btn btn-default") %></strong></h4>
+              </div>
+              <div class="orderList-item ">
+                <h4><strong><%= link_to("新品", products_path, class: "btn btn-default") %></strong></h4>
+              </div>
+              <div class="orderList-item "><h4><strong></strong></h4></div>
+              </div>
+
+               <!-- <div class="col-md-8 col-md-offset-2">
+                       <div class="dropdown  clearfix">
+                           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                             排序
+                               <span class="caret"></span>
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                               <li>
+                                 <%= link_to("价格从高到低", products_path(:order => "by_price_high"), class: "btn btn-default") %>
+                               </li>
+                               <li>
+                                   <%= link_to("价格从低到高", products_path(:order => "by_price_low"), class: "btn btn-default") %>
+
+                               </li>
+                               <li>
+                                 <%= link_to("综合排序", products_path, class: "btn btn-default") %>
+                               </li>
+                           </ul>
+                       </div>
+                        </div> -->
+
+
 
 
 
@@ -80,26 +115,3 @@
                   <% end %>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- 排序
-  <div class="orderList">
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-  </div>-->
