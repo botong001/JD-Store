@@ -61,3 +61,12 @@ $(window).scroll(function () {
       document.images[j].width=(document.images[j].width>420)?"420":document.images[j].width;
     }
   }
+
+  // navbar动态
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 125) {
+          $('#navbar').addClass('show_bgcolor')
+      } else {
+          $('#navbar').removeClass('show_bgcolor')
+      }
+  })

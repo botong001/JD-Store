@@ -4,6 +4,14 @@ class ProductsController < ApplicationController
 
   def index
   @products = Product.where(:is_hidden => false).order("position ASC")
+  @products = case params[:order]
+               when "by_price_low"
+                 Product.order('price')
+               when "by_price_high"
+                 Product.order('Price DESC')
+               else
+                 Product.order('created_at DESC')
+    end
   end
 
   def show
@@ -80,6 +88,20 @@ def search
   def search_criteria(query_string)
     { :title_cont => query_string }
   end
+
+ # 排序功能
+
+ # def index
+ #    @products = case params[:order]
+ #            when 'by_lower_bound'
+ #              Product.where(is_hidden: false).order('wage_lower_bound DESC')
+ #            when 'by_upper_bound'
+ #              Product.where(is_hidden: false).order('wage_upper_bound DESC')
+ #            else
+ #              Product.where(is_hidden: false).order('created_at DESC')
+ #            end
+ #  end
+
 
   private
 
