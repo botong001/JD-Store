@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :jion, :quit]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :join, :quit]
   before_action :validate_search_key, only: [:search]
 
   def index

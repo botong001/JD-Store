@@ -18,7 +18,7 @@ class User < ApplicationRecord
   has_many :participated_products, :through => :collects, :source => :product
 
   def is_member_of?(product)
-    participated_products.include?(product)
+    participated_products.include?(product) 
   end
 
   def join_collect!(product)
