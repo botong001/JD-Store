@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require 'china_city/jquery.china_city'
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap

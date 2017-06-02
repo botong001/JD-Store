@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ChinaCity::Engine => '/china_city'
   root 'welcome#index'
   devise_for :users, :controllers => { :registrations => "users/registrations" }
 #--管理员--
