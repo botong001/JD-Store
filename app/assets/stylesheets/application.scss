@@ -53,15 +53,16 @@
 .navbar-default {
 background: rgba(0,0,0,0);
 
+
 &.show_bgcolor {
-background-color: #02061A;
+background-color: #D3D6DB;
 }
 }
 
  .navbar-style {
     height: 70px;
-    background-color: #57584f;
-    border-color: transparent;                          //边框颜色设置为 透明
+    background-color: #D3D6DB;
+    border-color: transparent;                         //边框颜色设置为 透明
   }
 
 
@@ -72,28 +73,29 @@ background-color: #02061A;
      font-weight: lighter;;                        //字体粗细比默认样式缩小100磅值，让logo显得精致高级
      padding-left: 60px;
      font-size: 2.5em;
+     color: #4f4948;
    }
 
    .navbar-default .navbar-brand:hover,
    .navbar-default .navbar-brand:focus {
-     color: #FF6F00;
+     color: #7f8c8d;
      background-color: transparent;
    }
   .navbar-default .navbar-nav > li > a {
-   padding: 25px 13px;
-   color: #EAEAEA;
+   padding: 25px 30px;
+   color: #4f4948;
   }
 
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
-      color: #FF6F00;
+      color: #7f8c8d;
       background-color: transparent;
   }
 
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-      color: #FF6F00;
+      color: #7f8c8d;
       background-color: #212121;
   }
 
@@ -120,8 +122,8 @@ background-color: #02061A;
      bottom: 0;
      width: 100%;
      /* Set the fixed height of the footer here */
-     background-color: #57584f;
-     color: #EAEAEA;
+     background-color: #D3D6DB;
+     color: #4f4948;
 
      }
 
