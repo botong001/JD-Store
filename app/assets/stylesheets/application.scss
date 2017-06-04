@@ -117,7 +117,7 @@
      /* Set the fixed height of the footer here */
      background-color: #57584f;
      color: #EAEAEA;
-    
+
      }
 
      .footer-style h5 {
@@ -142,7 +142,7 @@
     .productList {
      margin: 1em auto 10em;
      display: block;
-     background-color: #f5f5f5;
+     background-color: #EAEAEA;
      border-radius: 3px;
      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
      transition: box-shadow .25s;
@@ -310,3 +310,32 @@
           z-index: 10; // 让消息显示在最上面
           border-radius: 0px;
         }
+
+
+        //---------Content---------
+
+  .content-section-a {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+  }
+
+  .content-section-b {
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+  }
+
+  .section-heading-spacer {
+      float: left;
+      width: 200px;
+      border-top: 3px solid #e7e7e7;
+  }
+
+  .section-heading {
+      margin-bottom: 30px;
+  }
+
+  .lead {
+      font-size: 18px;
+      font-weight: 400;
+  }
