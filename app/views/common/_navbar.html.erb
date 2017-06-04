@@ -1,10 +1,10 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-style" role="navigation">
-    <div class="container-fluid">
+<div class="navbar navbar-default navbar-fixed-top navbar-style" id="navbar" role="navigation">
+    <div class="container-fluid" id="navbar" >
       <!--logo-->
      <div class="navbar-header">
       <a href="/" class="navbar-brand">山货</a>
 
-      
+
 
         <!-- 响应式导航 -->
         <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -17,7 +17,7 @@
     </div>
 
     <!-- links -->
-    <div class="navbar-collapse navbar-ex1-collapse collapse navbar-right" aria-expanded="false">
+    <div class="navbar-collapse navbar-ex1-collapse collapse navbar-right"  aria-expanded="false">
 
             <ul class="nav navbar-nav navbar-right">
                <li>
@@ -55,7 +55,7 @@
 
 
            <!-- 分类 -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" >
            <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品分类<span class="caret"></span></a>
              <ul class="dropdown-menu" role="menu">
@@ -69,7 +69,7 @@
        </ul>
 
               <!-- 搜索输入框 -->
-                 <div class="navbar-form navbar-right">
+                 <div class="navbar-form navbar-right" >
                      <div id="custom-search-input">
                        <%= form_tag search_products_path, :method => :get  do %>
                          <div class="input-group col-md-12">
@@ -87,4 +87,4 @@
           </div>
       </div>
 
-</nav>
+</div>
