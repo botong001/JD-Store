@@ -59,6 +59,15 @@
             <%= @order.shipping_name %> - <%= @order.shipping_address %>
           </td>
         </tr>
+      <tr>
+        <td>
+           详细地址:
+        <%= ChinaCity.get(@order.province) %>
+        <%= ChinaCity.get(@order.city) %>
+        <%= ChinaCity.get(@order.district) %>
+        </td>
+      </tr>
+
       </tbody>
     </table>
 
