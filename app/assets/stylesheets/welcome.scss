@@ -11,10 +11,10 @@
 /*  --- 大图高度 和 滚动按钮 ---  */
 .fade-carousel {                                      //滚动大图的相框高
  position: relative;
- height: 800px;
+ height: 700px;
 }
 .fade-carousel .carousel-inner .item {                //图片截取的宽度，这里与相框高度一致
- height: 800px;
+ height: 700px;
 }
 .fade-carousel .carousel-indicators > li {            //滚动按钮的设置
  width: 5px;
@@ -99,19 +99,19 @@
 .fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-height: 800px;
+height: 700px;
 background-size: cover;                             //确保图片完全撑开
 background-position: center center;
 background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9qo8eo1oj31kw11xb2a.jpg);
+  background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9t0xx0s6j31kw11xx6p.jpg);
 }
 .fade-carousel .slides .slide-2 {
 background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9prpc7z3j31kw0w0e81.jpg);
 }
 .fade-carousel .slides .slide-3 {
-background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9t0xx0s6j31kw11xx6p.jpg);
+background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9qo8eo1oj31kw11xb2a.jpg);
 }
 
 /*  --- 响应式设置 ---  */
@@ -142,14 +142,14 @@ background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9t0xx0s6j31kw11x
 
 
 
-
+  // 之前的首页大图
   // .box {
   //   background-image: url('https://ws3.sinaimg.cn/large/006tNbRwgy1fg1psfrfhpj315o0rd7wi.jpg');
   //   padding-top: 33px;
   //   background-repeat: no-repeat;
   //   background-size: cover;
   //   padding-bottom: 50px;
-  //
+  //cc
   //
   //   .box-inner {
   //       background-color: rgba(10, 15, 11, 0.69);
@@ -230,17 +230,20 @@ background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9t0xx0s6j31kw11x
 
        // 底图
         .box2 {
+          background-image: url('https://ws3.sinaimg.cn/large/006tNbRwgy1fg1psfrfhpj315o0rd7wi.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
 
-        .video {
-           position: fixed;
-           right: 0;
-           bottom: 0;
-           min-width: 100%;
-           min-height: 100%;
-           width: auto;
-           height: auto;
-           z-index: -1;
-       }
+      //   .video {
+      //      position: fixed;
+      //      right: 0;
+      //      bottom: 0;
+      //      min-width: 100%;
+      //      min-height: 100%;
+      //      width: auto;
+      //      height: auto;
+      //      z-index: -1;
+      //  }
 
 
         .box-inner {
@@ -280,28 +283,22 @@ background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9t0xx0s6j31kw11x
 
         }
 
+        .content-section {
+          .content-section-title {
+            text-align: center;
+            letter-spacing: 0.5em;                              //拉开一点点字间距
+            font-weight:lighter;                                //字体粗细比默认样式缩小100磅值，让logo显得精致高级
+            font-size: 3.0em;
+            padding-bottom: 50px;
+
+          }
+          .content-section-slogan {
+            text-align: center;
+            letter-spacing: 0.3em;                              //拉开一点点字间距
+            font-weight:lighter;                                //字体粗细比默认样式缩小100磅值，让logo显得精致高级
+            font-size: 1.5em;
+            padding-top: 50px;
+          }
+        }
+
       }
-
-
-      // //---------Content---------
-      //  .content-section-title {
-      //    text-align: center;
-      //
-      //    letter-spacing: 0.5em;                              //拉开一点点字间距
-      //
-      //    font-size: 2.0em;
-      //
-      //    padding-bottom: 60px;
-      //
-      //  }
-      //
-      //  .content-section-slogan {
-      //    color: #7f7878;
-      //    letter-spacing: 0.5em;
-      //
-      //    font-size: 1.2em;
-      //    margin-bottom: 60px;
-      //    padding-top: 60px;
-      //    text-align: center;
-      //
-      //  }
