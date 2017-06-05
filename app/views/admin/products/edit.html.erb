@@ -22,6 +22,10 @@
 <%= f.input :is_hidden, :label => "隐藏" %>
 </div>
 
+<div class="group">
+<%= f.input :category, as: :radio_buttons, collection: [['源系', '源系'], ['润系', '润系'], ['臻系', '臻系']],required: '源系', :label => "商品类型" %>
+</div>
+
 <% if @product.image.present? %>
 <span>目前商品图</span> <br>
 <%= image_tag(@product.image.thumb.url) %>
