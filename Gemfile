@@ -41,6 +41,13 @@ gem 'aasm'
 # 商品位置调整
 gem 'acts_as_list'
 
+# 中文翻译
+gem "rails-i18n"
+
+# devise翻译
+gem "devise-i18n"
+
+
 # 搜索
 gem 'ransack'
 gem 'will_paginate'
