@@ -65,5 +65,5 @@ Rails.application.routes.draw do
     end
   end
 
-
+resource :user
 end

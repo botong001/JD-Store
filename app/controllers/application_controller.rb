@@ -1,6 +1,16 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
 
+  #  时区管理
+  before_action :set_timezone
+
+  def set_timezone
+    if current_user && current_user.time_zone
+      Time.zone = current_user.time_zone
+    end
+  end
+
+    # 语系管理
  def set_locale
    if params[:locale] && I18n.available_locales.include?( params[:locale].to_sym )
      session[:locale] = params[:locale]
@@ -8,7 +18,7 @@ class ApplicationController < ActionController::Base
 
    I18n.locale = session[:locale] || I18n.default_locale
  end
- 
+
   protect_from_forgery with: :exception
 
   def require_is_admin
@@ -35,4 +45,6 @@ class ApplicationController < ActionController::Base
      session[:cart_id] = cart.id
      return cart
    end
+
+
 end

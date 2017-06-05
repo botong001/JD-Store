@@ -45,6 +45,9 @@
                   <li>
                    <%= link_to("管理员", admin_products_path, class: "li-style" ) %>
                   </li>
+                   <li>
+                     <%= link_to('修改个人资料', edit_user_path) %>
+                   </li>
                    <% end %>
                   <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
                 </ul>
