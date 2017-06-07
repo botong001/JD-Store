@@ -90,6 +90,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+# 本地验证码登录
+gem 'rucaptcha'
+gem 'dalli'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
