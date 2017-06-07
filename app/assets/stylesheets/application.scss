@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require social-share-button
  */
 
  @import "bootstrap-sprockets";
@@ -122,7 +123,7 @@ background-color: #02061A;
      /* Set the fixed height of the footer here */
      background-color: #57584f;
      color: #EAEAEA;
-    
+
      }
 
      .footer-style h5 {

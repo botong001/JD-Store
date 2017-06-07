@@ -47,7 +47,6 @@ gem "rails-i18n"
 # devise翻译
 gem "devise-i18n"
 
-
 # 搜索
 gem 'ransack'
 gem 'will_paginate'
@@ -80,6 +79,9 @@ gem "intercom-rails"
 # 详细地址
 gem 'china_city'
 
+# 社交分享
+gem 'social-share-button'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 # debug
@@ -90,9 +92,9 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-# 本地验证码登录
-gem 'rucaptcha'
-gem 'dalli'
+
+
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

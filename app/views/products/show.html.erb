@@ -80,9 +80,9 @@
                                                <i class="fa fa-star-o"></i>
                                                 <%= link_to('收藏'.html_safe,join_product_path(@product), method: :post, class: "btn btn-xs btn-default" ) %>
                                             <% end %>
-                                               <span>（<%= @product.collects.count %>人气）</span>
-
+                                               <span>（<%= @product.collects.count %>人气）</span><%= social_share_button_tag(@product.title, :allow_sites => %w(twitter facebook wechat google_plus weibo qq douban)) %>
                                     </div>
+
 
                             </div>
 

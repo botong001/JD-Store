@@ -14,6 +14,7 @@
 //= require 'china_city/jquery.china_city'
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require social-share-button
 //= require bootstrap
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
