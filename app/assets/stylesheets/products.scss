@@ -72,43 +72,53 @@
 }
 
 
-//----评论区----
-.review-comment-form {
-  text-align: left;
-  padding: 2em 3em;
-}
+    //----评论区----
+    // .review-comment-form {
+    //   text-align: left;
+    //   padding: 2em 3em;
+    // }
+    //
+    // .review-comment-button {
+    //   text-align: left;
+    //   padding: 0 3em;
+    // }
+    //
+    // .review {
+    //   text-align: left;
+    //   li {
+    //     list-style: none;
+    //   }
+    // }
+    //
+    // .review-user-email {
+    //   font-weight: lighter;
+    // }
+    //
+    // .review-comment {
+    //   margin: 2em auto;
+    // }
+    //
+    // .review-hr {
+    //   padding: 0 3em;
+    // }
 
-.review-comment-button {
-  text-align: left;
-  padding: 0 3em;
-}
 
-.review {
-  text-align: left;
-  li {
-    list-style: none;
-  }
-}
+    //  产品页面头图
 
-.review-user-email {
-  font-weight: lighter;
-}
-
-.review-comment {
-  margin: 2em auto;
-}
-
-.review-hr {
-  padding: 0 3em;
-}
-
+    .product-pic {
+      background-image: url('https://ws3.sinaimg.cn/large/006tNbRwgy1fg9t0nop3fj31jk1117wh.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 270px;
+      padding-top: 270px;
+    }
 
   .run-pic {
     background-image: url('https://ws4.sinaimg.cn/large/006tKfTcgy1fg3js3ibzfj31jd0gk7le.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 270px;
-    padding-top: 50px;
+    padding-top: 270px;
   }
 
 
@@ -117,7 +127,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 270px;
-    padding-top: 50px;
+    padding-top: 270px;
   }
 
   .zhen-pic {
@@ -125,49 +135,50 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 270px;
-    padding-top: 50px;
+    padding-top: 270px;
   }
 
-/*排序*/
-.orderList {
-  margin: 40px auto;
-  width: 1200px;
-  overflow: hidden;
-}
-.orderList-item {
-  float: left;
-  width: 108px;
-  height: 60px;
-  line-height: 60px;
-}
+      /*排序*/
+      .orderList {
+        margin: 40px auto;
 
-// 商品品论区域样式
-.review-comment-form {
-  text-align: left;
-  padding: 2em 2em;
-}
-.review-comment-button {
-  text-align: left;
-  padding: 0 2em;
-  margin-top: -2em;
-}
-.reviews {
-  text-align: left;
-  li {
-    list-style: none;
-  }
-}
-.review-user-email {
-  font-weight: bold;
-}
-.review-comment {
-  margin: 1em auto;
-}
-.review-hr {
-  padding: 0 3em;
-}
+      }
+      .orderList-item {
+        float: right;
+        width: 82px;
+        letter-spacing: 0.4em;
 
-.col-xs-3 {
-    width: 50%;
-    float: right
-}
+      }
+
+
+
+      // 商品品论区域样式
+      .review-comment-form {
+        text-align: left;
+        padding: 2em 2em;
+      }
+      .review-comment-button {
+        text-align: left;
+        padding: 0 2em;
+        margin-top: -2em;
+      }
+      .reviews {
+        text-align: left;
+        li {
+          list-style: none;
+        }
+      }
+      .review-user-email {
+        font-weight: bold;
+      }
+      .review-comment {
+        margin: 1em auto;
+      }
+      .review-hr {
+        padding: 0 3em;
+      }
+
+      .col-xs-3 {
+          width: 50%;
+          float: right
+      }

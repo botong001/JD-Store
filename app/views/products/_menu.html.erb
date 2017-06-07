@@ -1,0 +1,48 @@
+<!-- 排序分类条 -->
+<div class="container">
+<div class="row">
+
+
+
+      <div class="orderList">
+          <div class="orderList-item ">
+              <div class="dropdown">
+                        <button class="btn btn-reorder dropdown-toggle" type="button" data-toggle="dropdown">
+                                    分类
+                                      <span class="caret"></span>
+                        </button>
+                         <ul class="reorder dropdown-menu ">
+                                      <li>
+                                        <%= link_to("全部商品", products_path) %>
+                                      </li>
+
+                                      <li>
+                                          <%= link_to("源品", yuan_products_path) %>
+                                      </li>
+
+                                      <li>
+                                        <%= link_to("润品", run_products_path) %>
+                                      </li>
+
+                                      <li>
+                                        <%= link_to("臻品", zhen_products_path) %>
+                                      </li>
+                          </ul>
+              </div>
+          </div>
+
+          <div class="orderList-item ">
+
+          <p> <%= link_to("价格", products_path(:order => "by_price_high"), class: "btn btn-default") %></p>
+          </div>
+          <!-- <div class="orderList-item ">
+            <h4><strong><%= link_to("销量", products_path(:order => "by_price_low"), class: "btn btn-default") %></strong></h4>
+          </div> -->
+          <div class="orderList-item ">
+               <p><%= link_to("新品", products_path, class: "btn btn-default") %></p>
+          </div>
+
+
+   </div>
+</div>
+</div>

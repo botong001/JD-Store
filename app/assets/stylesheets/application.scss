@@ -27,7 +27,7 @@
   }
 
   body {
-    padding-top: 71px;                                  // 腾出navbar的遮挡空间
+    // padding-top: 71px;                                  // 腾出navbar的遮挡空间
     padding-bottom: 117px;
     font-family: 'Noto Sans SC', sans-serif;            // google思源黑简作为主字体
     color: #666;                                        // 修改全站的 字体主色
@@ -53,15 +53,16 @@
 .navbar-default {
 background: rgba(0,0,0,0);
 
+
 &.show_bgcolor {
-background-color: #02061A;
+background-color: #D3D6DB;
 }
 }
 
  .navbar-style {
-    height: 70px;
-    background-color: #57584f;
-    border-color: transparent;                          //边框颜色设置为 透明
+    height: 72px;
+    background-color: rgba(0,0,0,0);
+    border-color: transparent;                         //边框颜色设置为 透明
   }
 
 
@@ -72,28 +73,29 @@ background-color: #02061A;
      font-weight: lighter;;                        //字体粗细比默认样式缩小100磅值，让logo显得精致高级
      padding-left: 60px;
      font-size: 2.5em;
+     color: #4f4948;
    }
 
    .navbar-default .navbar-brand:hover,
    .navbar-default .navbar-brand:focus {
-     color: #FF6F00;
+     color: #7f8c8d;
      background-color: transparent;
    }
   .navbar-default .navbar-nav > li > a {
-   padding: 25px 13px;
-   color: #EAEAEA;
+   padding: 25px 30px;
+   color: #4f4948;
   }
 
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
-      color: #FF6F00;
+      color: #7f8c8d;
       background-color: transparent;
   }
 
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-      color: #FF6F00;
+      color: #7f8c8d;
       background-color: #212121;
   }
 
@@ -120,9 +122,9 @@ background-color: #02061A;
      bottom: 0;
      width: 100%;
      /* Set the fixed height of the footer here */
-     background-color: #57584f;
-     color: #EAEAEA;
-    
+     background-color: #D3D6DB;
+     color: #4f4948;
+
      }
 
      .footer-style h5 {
@@ -147,7 +149,7 @@ background-color: #02061A;
     .productList {
      margin: 1em auto 10em;
      display: block;
-     background-color: #f5f5f5;
+     background-color: #EAEAEA;
      border-radius: 3px;
      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
      transition: box-shadow .25s;
@@ -286,26 +288,6 @@ background-color: #02061A;
     }
 
 
-
-      /*轮播图*/
-
-      .carousel-BC1{
-        //height: 111px;
-        background: #190c07;
-      }
-      .carousel-BC2{
-        //height: 111px;
-        background-color: #190c07;
-      }
-      .carousel-BC3{
-        //height: 111px;
-        background-color: #190c07;
-      }
-      .carousel-BC4{
-        //height: 111px;
-        background-color: #190c07;
-      }
-
       // 固定位置的消息通知
         .alert {
           position: fixed; // 这个属性防止将内容挤下去
@@ -315,3 +297,32 @@ background-color: #02061A;
           z-index: 10; // 让消息显示在最上面
           border-radius: 0px;
         }
+
+
+        //---------Content---------
+
+  .content-section-a {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+  }
+
+  .content-section-b {
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+  }
+
+  .section-heading-spacer {
+      float: left;
+      width: 200px;
+      border-top: 3px solid #e7e7e7;
+  }
+
+  .section-heading {
+      margin-bottom: 30px;
+  }
+
+  .lead {
+      font-size: 18px;
+      font-weight: 400;
+  }
