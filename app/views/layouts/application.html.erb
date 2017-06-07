@@ -15,15 +15,17 @@
     </head>
 
     <body>
-        <%= render "common/flashes" %>
+          <%= render "common/flashes" %>
 
         <div class="container-fluid">
           <div class="row">
                <%= render "common/navbar" %>
+
+
+
                <%= yield %>
              </div>
         </div>
         <%= render "common/footer" %>
-
     </body>
 </html>

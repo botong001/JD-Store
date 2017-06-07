@@ -11,8 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require 'china_city/jquery.china_city'
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require social-share-button
 //= require bootstrap
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
@@ -61,3 +63,12 @@ $(window).scroll(function () {
       document.images[j].width=(document.images[j].width>420)?"420":document.images[j].width;
     }
   }
+
+  // navbar动态
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 125) {
+          $('#navbar').addClass('show_bgcolor')
+      } else {
+          $('#navbar').removeClass('show_bgcolor')
+      }
+  })

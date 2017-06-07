@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "/faq" => "pages#faq"
+  mount ChinaCity::Engine => '/china_city'
   root 'welcome#index'
   devise_for :users, :controllers => { :registrations => "users/registrations" }
 #--管理员--
@@ -35,7 +37,9 @@ Rails.application.routes.draw do
       get :zhen    #臻系列
     end
     resources :comments
+    resources :reviews
   end
+
 
   namespace :account do
    resources :orders
@@ -61,5 +65,5 @@ Rails.application.routes.draw do
     end
   end
 
-
+resource :user
 end

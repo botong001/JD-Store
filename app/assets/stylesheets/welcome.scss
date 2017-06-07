@@ -69,31 +69,63 @@
       }
         }
 
+    // 中图
+        .box3 {
+          background-image: url('https://ws3.sinaimg.cn/large/006tNbRwgy1fg1psfrfhpj315o0rd7wi.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+
+
+          .box-inner {
+              background-color: rgba(10, 15, 11, 0.69);
+              border-radius: 20px;
+
+              height: 100%;
+            }
+
+          .title {
+              text-align: center;
+              letter-spacing: 0.5em;                              //拉开一点点字间距
+              font-weight:lighter;                                //字体粗细比默认样式缩小100磅值，让logo显得精致高级
+              font-size: 3.0em;
+              color: #d76363;
+              margin-top: 0px;
+              line-height: 74px;
+
+            }
+        }
+
+       // 底图
         .box2 {
           background-image: url('https://ws4.sinaimg.cn/large/006tNbRwgy1fg22076yi2j312r0akwku.jpg');
           background-repeat: no-repeat;
           background-size: cover;
-          padding-bottom: 106px;
+          padding-bottom: 298px;
           padding-top: 50px;
         }
+
+    
+
+
+
 
       //---------Content---------
        .content-section-title {
          text-align: center;
 
          letter-spacing: 0.5em;                              //拉开一点点字间距
-         font-weight:lighter;                                //字体粗细比默认样式缩小100磅值，让logo显得精致高级
+
          font-size: 2.0em;
-         color: #d76363;
+
          padding-bottom: 60px;
-         padding-right: 35px;
+
        }
 
        .content-section-slogan {
-         color: #d76363;
-         letter-spacing: 1.4em;
-         font-weight:lighter;
-         font-size: 1.5em;
+         color: #7f7878;
+         letter-spacing: 0.5em;
+
+         font-size: 1.2em;
          margin-bottom: 60px;
          padding-top: 60px;
          text-align: center;

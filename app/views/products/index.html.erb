@@ -1,32 +1,26 @@
 <!-- 轮播图 -->
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
-              </ol>
-              <div id="hover" class="carousel-inner" role="listbox">
-                <div class="item active">
-                   <div class="carousel-BC1">
-                    <div class="container">
-                      <img src="https://ws3.sinaimg.cn/large/006tKfTcgy1ffzwb4j1o8j31jk0m84dh.jpg" width="1140" alt="...">
-                      <div class="carousel-caption">
+
+    <!-- <div id="hover" class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="carousel-BC1">
+                <div class="container">
+                    <img src="https://ws3.sinaimg.cn/large/006tKfTcgy1ffzwb4j1o8j31jk0m84dh.jpg" width="1140" alt="...">
+                    <div class="carousel-caption">
                         <p></p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="item">
-                  <div class="carousel-BC2">
-                    <div class="container">
-                      <img src="https://ws2.sinaimg.cn/large/006tNbRwgy1ffzx8zia4pj31jk0m87wh.jpg" width="1140" alt="...">
-                      <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-BC2">
+                <div class="container">
+                    <img src="https://ws2.sinaimg.cn/large/006tNbRwgy1ffzx8zia4pj31jk0m87wh.jpg" width="1140" alt="...">
+                    <div class="carousel-caption">
                         <p></p>
-                      </div>
                     </div>
-                  </div>
-                  </div>
+                </div>
+            </div>
+        </div> -->
                 <!-- <div class="item">
                   <div class="carousel-BC3">
                     <div class="container">
@@ -37,7 +31,7 @@
                     </div>
                   </div>
                 </div> -->
-                 <div class="item">
+                 <!-- <div class="item">
                   <div class="carousel-BC4">
                     <div class="container">
                       <img src="https://ws3.sinaimg.cn/large/006tNbRwgy1ffzxehh5uuj31jk0m8wwe.jpg" width="1140" alt="...">
@@ -48,10 +42,45 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
+            <!-- 排序功能 -->
 
+            <!-- <div class="orderList">
+              <div class="orderList-item ">
+                <h4><strong> <%= link_to("价格", products_path(:order => "by_price_high"), class: "btn btn-default") %></strong></h4>
+              </div>
+              <div class="orderList-item ">
+                <h4><strong><%= link_to("销量", products_path(:order => "by_price_low"), class: "btn btn-default") %></strong></h4>
+              </div>
+              <div class="orderList-item ">
+                <h4><strong><%= link_to("新品", products_path, class: "btn btn-default") %></strong></h4>
+              </div>
+              <div class="orderList-item "><h4><strong></strong></h4></div>
+              </div> -->
 
+               <!-- <div class="col-md-8 col-md-offset-2">
+                       <div class="dropdown  clearfix">
+                           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                             排序
+                               <span class="caret"></span>
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                               <li>
+                                 <%= link_to("价格从高到低", products_path(:order => "by_price_high"), class: "btn btn-default") %>
+                               </li>
+                               <li>
+                                   <%= link_to("价格从低到高", products_path(:order => "by_price_low"), class: "btn btn-default") %>
+
+                               </li>
+                               <li>
+                                 <%= link_to("综合排序", products_path, class: "btn btn-default") %>
+                               </li>
+                           </ul>
+                       </div>
+                        </div> -->
+
+ -->
 
 
 
@@ -80,26 +109,3 @@
                   <% end %>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- 排序
-  <div class="orderList">
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-    <div class="orderList-item "><h4><strong></strong></h4></div>
-  </div>-->

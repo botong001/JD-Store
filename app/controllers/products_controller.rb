@@ -4,13 +4,32 @@ class ProductsController < ApplicationController
 
   def index
   @products = Product.where(:is_hidden => false).order("position ASC")
+  @products = case params[:order]
+                when "by_price_low"
+                  Product.order('price')
+                when "by_price_high"
+                  Product.order('Price DESC')
+                else
+                  Product.order('created_at DESC')
+     end
   end
 
   def show
     @product = Product.find(params[:id])
+    @reviews = @product.reviews
+    if @reviews.blank?
+        @avg_review = 0
+        @avg_look = 0
+        @avg_price = 0
+      else
+        @avg_review = @reviews.average(:freshness).round(2)
+        @avg_look = @reviews.average(:look).round(2)
+        @avg_price = @reviews.average(:price).round(2)
+      end
     @comments = @product.comments.recent.paginate(:page => params[:page], :per_page => 5)
     @comment = Comment.new
   end
+
 
 # -- 加入购物车----
 

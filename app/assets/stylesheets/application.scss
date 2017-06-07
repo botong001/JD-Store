@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require social-share-button
  */
 
  @import "bootstrap-sprockets";
@@ -42,19 +43,29 @@
      transition: 0.5s;                                 // 鼠标指向时 0.5面渐变
      text-decoration: none;                            // 移除下划线
    }
+
+
   }
 
 
  //---------Navbar---------
+ // navbar 动态
+
+.navbar-default {
+background: rgba(0,0,0,0);
+
+&.show_bgcolor {
+background-color: #02061A;
+}
+}
+
  .navbar-style {
     height: 70px;
     background-color: #57584f;
     border-color: transparent;                          //边框颜色设置为 透明
   }
 
-  .navbar-default .navbar-brand {
-      color: #EAEAEA;
-   }
+
 
    .navbar-brand {
      line-height: 50px;
@@ -87,10 +98,7 @@
       background-color: #212121;
   }
 
-   .navbar-collapse {
-     background: #57584f;
 
-   }
 
    .li-style {
     color: #666;                                        // 修改全站的 字体主色
@@ -115,6 +123,7 @@
      /* Set the fixed height of the footer here */
      background-color: #57584f;
      color: #EAEAEA;
+
      }
 
      .footer-style h5 {

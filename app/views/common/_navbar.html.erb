@@ -1,10 +1,10 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-style" role="navigation">
-    <div class="container-fluid">
+<div class="navbar navbar-default navbar-fixed-top navbar-style" id="navbar" role="navigation">
+    <div class="container-fluid" id="navbar" >
       <!--logo-->
      <div class="navbar-header">
       <a href="/" class="navbar-brand">山货</a>
 
-      
+
 
         <!-- 响应式导航 -->
         <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -17,7 +17,7 @@
     </div>
 
     <!-- links -->
-    <div class="navbar-collapse navbar-ex1-collapse collapse navbar-right" aria-expanded="false">
+    <div class="navbar-collapse navbar-ex1-collapse collapse navbar-right"  aria-expanded="false">
 
             <ul class="nav navbar-nav navbar-right">
                <li>
@@ -45,6 +45,9 @@
                   <li>
                    <%= link_to("管理员", admin_products_path, class: "li-style" ) %>
                   </li>
+                   <li>
+                     <%= link_to('修改个人资料', edit_user_path) %>
+                   </li>
                    <% end %>
                   <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
                 </ul>
@@ -54,8 +57,20 @@
             </ul>
 
 
+            <ul class="nav navbar-nav navbar-right" >
+               <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">语系<span class="caret"></span></a>
+                 <ul class="dropdown-menu" role="menu">
+                  <li><%= link_to("中文", :controller => controller_name, :action => action_name, :locale => "zh-CN")  %></li>
+                   <li><%= link_to("English", :controller => controller_name, :action => action_name, :locale => "en") %></li>
+                </ul>
+              </li>
+            </ul>
+
+
+
            <!-- 分类 -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" >
            <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品分类<span class="caret"></span></a>
              <ul class="dropdown-menu" role="menu">
@@ -69,7 +84,7 @@
        </ul>
 
               <!-- 搜索输入框 -->
-                 <div class="navbar-form navbar-right">
+                 <div class="navbar-form navbar-right" >
                      <div id="custom-search-input">
                        <%= form_tag search_products_path, :method => :get  do %>
                          <div class="input-group col-md-12">
@@ -87,4 +102,4 @@
           </div>
       </div>
 
-</nav>
+</div>
