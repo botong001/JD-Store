@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "/faq" => "pages#faq"
   mount ChinaCity::Engine => '/china_city'
   root 'welcome#index'
   devise_for :users, :controllers => { :registrations => "users/registrations" }
@@ -64,5 +65,5 @@ Rails.application.routes.draw do
     end
   end
 
-
+resource :user
 end
