@@ -32,8 +32,21 @@
           </div>
 
           <div class="orderList-item ">
+            <div class="dropdown">
+                      <button class="btn btn-reorder dropdown-toggle" type="button" data-toggle="dropdown">
+                                价格
+                                    <span class="caret"></span>
+                      </button>
+                       <ul class="reorder dropdown-menu ">
+                                    <li>
+                                      <%= link_to("价格低到高", products_path(:order => "by_price_low")) %>
+                                    </li>
 
-          <p> <%= link_to("价格", products_path(:order => "by_price_high"), class: "btn btn-default") %></p>
+                                    <li>
+                                      <%= link_to("价格高到低", products_path(:order => "by_price_high")) %>
+                                    </li>
+                        </ul>
+            </div>
           </div>
           <!-- <div class="orderList-item ">
             <h4><strong><%= link_to("销量", products_path(:order => "by_price_low"), class: "btn btn-default") %></strong></h4>
