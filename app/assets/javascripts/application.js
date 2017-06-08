@@ -17,15 +17,16 @@
 //= require bootstrap
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
-//= require turbolinks
 //= require_tree .
 
 
 
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
 
   // 收起提示信息通知
     slideUpAlert();
+
+
 });
 
 // 提示信息通知
