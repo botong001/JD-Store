@@ -47,7 +47,6 @@
   margin: 1em auto 5em;
   }
 
-
   // 收藏按钮
 .product-collection {
   line-height: 2em;
@@ -63,44 +62,48 @@
   border: 1px solid #e3e3e3;
   padding: 2em 1.2em;
   letter-spacing: 0.5em;
-  text-align: center;
-  line-height: 3em;
-  img {                            //重要样式代码，需要配合application.js的自适应代码块一起使用
-    max-width:100%;
-    height:auto;
+  margin: 30px auto;
+  font-size: 1.2em;
+  line-height: 3em;                   //拉开行高
+  text-align: justify;                  //文本两端对齐
+  img {
+    max-width:100%; height:auto;         //重要样式代码，实现不同大小屏幕下的响应式伸缩
+    border-radius: 6px;                 //为所有图片设置6px的圆角
     }
 }
 
 
-    //----评论区----
-    // .review-comment-form {
-    //   text-align: left;
-    //   padding: 2em 3em;
-    // }
-    //
-    // .review-comment-button {
-    //   text-align: left;
-    //   padding: 0 3em;
-    // }
-    //
-    // .review {
-    //   text-align: left;
-    //   li {
-    //     list-style: none;
-    //   }
-    // }
-    //
-    // .review-user-email {
-    //   font-weight: lighter;
-    // }
-    //
-    // .review-comment {
-    //   margin: 2em auto;
-    // }
-    //
-    // .review-hr {
-    //   padding: 0 3em;
-    // }
+
+
+    // ----评论区----
+    .review-comment-form {
+      text-align: left;
+      padding: 2em 3em;
+    }
+
+    .review-comment-button {
+      text-align: left;
+      padding: 0 3em;
+    }
+
+    .review {
+      text-align: left;
+      li {
+        list-style: none;
+      }
+    }
+
+    .review-user-email {
+      font-weight: lighter;
+    }
+
+    .review-comment {
+      margin: 2em auto;
+    }
+
+    .review-hr {
+      padding: 0 3em;
+    }
 
 
     //  产品页面头图
@@ -152,33 +155,4 @@
 
 
 
-      // 商品品论区域样式
-      .review-comment-form {
-        text-align: left;
-        padding: 2em 2em;
-      }
-      .review-comment-button {
-        text-align: left;
-        padding: 0 2em;
-        margin-top: -2em;
-      }
-      .reviews {
-        text-align: left;
-        li {
-          list-style: none;
-        }
-      }
-      .review-user-email {
-        font-weight: bold;
-      }
-      .review-comment {
-        margin: 1em auto;
-      }
-      .review-hr {
-        padding: 0 3em;
-      }
-
-      .col-xs-3 {
-          width: 50%;
-          float: right
-      }
+    

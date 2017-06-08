@@ -100,8 +100,8 @@
                                                                <a href="#tab_default_1" data-toggle="tab">商品详情</a>
                                                         </li>
                                                         <li>
-                <a href="#tab_default_2" data-toggle="tab">用户评价 (<%= @product.reviews.count %>) </a>
-              </li>
+                                                               <a href="#tab_default_2" data-toggle="tab">用户评价 (<%= @product.comments.count %>) </a>
+                                                        </li>
                                                 </ul>
 
                                           </div>
@@ -116,56 +116,9 @@
 
 
 
-                                            <!-- 商品评论区域 --><!--对商品评论以及评星-->
-                                     <div class="product-particulars-box row tab-pane" id="tab_default_2">
-                                       <div class="text-center">
-                                         <h3>综合评价</h3>
-                                         新鲜： <div class="star-freshness" data-score= <%= @avg_review %> ></div>
-                                         外观： <div class="star-look" data-score= <%= @avg_look %> ></div>
-                                         价格： <div class="star-price" data-score= <%= @avg_price %> ></div>
-                                       </div>
-                                       <%= link_to("评价",new_product_review_path(@product), :class => "btn btn-lg btn-info") %>
-
-                                       <hr>
-
-                                       <% if @reviews.blank? %>
-                                             <p>该商品暂时没有获得用户的评价</p>
-                                       <% else %>
-                                       <% @reviews.each do |review| %>
-                                         <div class="reviews">
-                                           <ul>
-                                             <li>
-                                               <div class="row">
-                                                 <div class="col-xs-9 review-user-email"><%= review.user.email %></div>
-                                                 <div class="col-xs-3"><%= review.created_at.strftime("%Y-%m-%d %H-%M") %></div>
-                                               </div>
-                                               <div class="review-comment">
-                                                 新鲜： <div class="star-freshness" data-score= <%= review.freshness %> ></div>
-                                                 外观： <div class="star-look" data-score= <%= review.look %> ></div>
-                                                 价格： <div class="star-price" data-score= <%= review.price %> ></div>
-                                                 <%= review.body %>
-                                               </div>
-
-                                               <div>
-                                                 <% if review.user == current_user %>
-                                                    <%= link_to("删除", product_review_path(@product, review), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-sm pull-right") %>
-                                                 <% end %>
-                                                <% end %>
-                                               </div>
-                                             </li>
-                                           </ul>
-                                           <div class="review-hr">
-                                             <hr>
-                                           </div>
-                                         </div>
-                                         <% end %>
-                                     </div>
-                                   </div>
-                                 </div>
 
 
-
-                                                      <!-- <div class="product-particulars-box row tab-pane" id="tab_default_2">
+                                                      <div class="product-particulars-box row tab-pane" id="tab_default_2">
                                                                 <%= simple_form_for ([@product, @comment]) do |f| %>
                                                                         <div class="review-comment-form">
                                                                               <%= f.input :content, :label => "添加评论" %>
@@ -199,49 +152,9 @@
                                                                 <% end %>
                                                       </div>
 
-                                          </div> -->
+                                          </div>
                             </div>
 
                   </div>
       </div>
   </div>
-
-
-  <script>
-    $('.star-freshness').raty({
-          path: '/assets/',
-              readOnly: true,
-              score: function() {
-            return $(this).attr('data-score');
-          }
-    });
-    $('.star-look').raty({
-          path: '/assets/',
-              readOnly: true,
-              score: function() {
-            return $(this).attr('data-score');
-          }
-    });
-    $('.star-price').raty({
-          path: '/assets/',
-              readOnly: true,
-              score: function() {
-            return $(this).attr('data-score');
-          }
-    });
-    $('#star-freshness').raty({
-    path: '/assets/',
-    scoreName: 'review[freshness]'
-    });
-    $('#star-look').raty({
-    path: '/assets/',
-    scoreName: 'review[look]'
-    });
-    $('#star-price').raty({
-        path: '/assets/',
-        scoreName: 'review[price]'
-    });
-    $('#star-freshness img').eq(0).trigger('click')
-    $('#star-look img').eq(0).trigger('click')
-    $('#star-price img').eq(0).trigger('click')
-  </script>

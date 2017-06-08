@@ -33,7 +33,5 @@ class Product < ApplicationRecord
 #----评论功能---
 has_many :comments
 
-# 评星
-has_many :reviews
 
 end

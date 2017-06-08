@@ -36,7 +36,7 @@ Rails.application.routes.draw do
       get :zhen    #臻系列
     end
     resources :comments
-    resources :reviews
+
   end
 
 

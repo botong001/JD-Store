@@ -2,8 +2,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
-  # 评星
- has_many :reviews
+
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
@@ -22,7 +21,7 @@ class User < ApplicationRecord
   has_many :participated_products, :through => :collects, :source => :product
 
   def is_member_of?(product)
-    participated_products.include?(product) 
+    participated_products.include?(product)
   end
 
   def join_collect!(product)
