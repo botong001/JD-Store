@@ -1,8 +1,15 @@
-<div class="navbar navbar-default navbar-fixed-top navbar-style" id="navbar" role="navigation">
-    <div class="container-fluid" id="navbar" >
-      <!--logo-->
+<!-- 判断是否在首页、注册、登录页面，使用 id="navbar" -->
+<% if current_page?('/') || current_page?('/users/sign_up') || current_page?('/users/sign_in')%>
+<nav class="navbar navbar-default navbar-fixed-top navbar-style" id="navbar" style="padding-left:10%;padding-right:10%" role="navigation">
+<% else %>
+<!-- 非首页使用 class="show_bgcolor" -->
+  <nav class="navbar navbar-default navbar-fixed-top show_bgcolor" style="padding-left:10%;padding-right:10%" role="navigation">
+<% end %>
+    <div class="container-fluid" >
+      <!-- logo-->
      <div class="navbar-header">
       <a href="/" class="navbar-brand">山货</a>
+      <!-- <a class="navbar-brand" href="/"><img src='<%= image_url 'icon1.png' %>' >Fitness</a> -->
 
 
 
@@ -17,7 +24,25 @@
     </div>
 
     <!-- links -->
-    <div class="navbar-collapse navbar-ex1-collapse collapse navbar-right"  aria-expanded="false">
+    <div class="navbar-collapse navbar-ex1-collapse collapse "  id="myNavbar">
+
+                 <!-- 分类 -->
+              <ul class="nav navbar-nav" >
+                 <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品分类<span class="caret"></span></a>
+                   <ul class="dropdown-menu" role="menu">
+                     <li><%= link_to("全部商品", products_path, class: "li-style") %></li>
+                     <li><%= link_to("源系", yuan_products_path, class: "li-style") %></li>
+                     <li><%= link_to("润系", run_products_path, class: "li-style") %></li>
+                     <li><%= link_to("臻系", zhen_products_path, class: "li-style") %></li>
+
+                  </ul>
+
+                </li>
+
+             </ul>
+
+
 
             <ul class="nav navbar-nav navbar-right">
                <li>
@@ -36,14 +61,14 @@
               </a>
               <ul class="dropdown-menu">
                   <li>
-                    <%= link_to("已收藏的商品", account_products_path, class: "li-style") %>
+                    <%= link_to("已收藏的商品", account_products_path) %>
                   </li>
                   <li>
-                    <%= link_to("个人订单列表", account_orders_path, class: "li-style" ) %>
+                    <%= link_to("个人订单列表", account_orders_path) %>
                   </li>
                    <% if current_user.admin? %>
                   <li>
-                   <%= link_to("管理员", admin_products_path, class: "li-style" ) %>
+                   <%= link_to("管理员", admin_products_path) %>
                   </li>
                    <% end %>
                   <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
@@ -53,38 +78,16 @@
 
             </ul>
 
+            <!-- 搜索输入框 -->
+           <ul class="navbar-form navbar-right" >
+           <ol> <%= render :partial => "products/search_bar"  %></ol>
+          </ul>
 
-           <!-- 分类 -->
-        <ul class="nav navbar-nav navbar-right" >
-           <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品分类<span class="caret"></span></a>
-             <ul class="dropdown-menu" role="menu">
-               <li><%= link_to("全部商品", products_path, class: "li-style") %></li>
-               <li><%= link_to("源系", yuan_products_path, class: "li-style") %></li>
-               <li><%= link_to("润系", run_products_path, class: "li-style") %></li>
-               <li><%= link_to("臻系", zhen_products_path, class: "li-style") %></li>
 
-            </ul>
-          </li>
-       </ul>
 
-              <!-- 搜索输入框 -->
-                 <div class="navbar-form navbar-right" >
-                     <div id="custom-search-input">
-                       <%= form_tag search_products_path, :method => :get  do %>
-                         <div class="input-group col-md-12">
-                             <input type="text" class="form-control input-sm" name="q" value="<%= params[:q] %>" placeholder="Search  ...">
-                             <span class="input-group-btn">
-                                 <button class="btn btn-info btn-sm" type="submit">
-                                     <i class="glyphicon glyphicon-search"></i>
-                                 </button>
-                             </span>
-                         </div>
-                       <% end %>
-                     </div>
-                 </div>
+
 
           </div>
       </div>
 
-</div>
+</nav>
