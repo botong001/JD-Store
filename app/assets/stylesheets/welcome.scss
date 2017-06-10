@@ -11,10 +11,10 @@
 /*  --- 大图高度 和 滚动按钮 ---  */
 .fade-carousel {                                      //滚动大图的相框高
  position: relative;
- height: 1000px;
+ height: 800px;
 }
 .fade-carousel .carousel-inner .item {                //图片截取的宽度，这里与相框高度一致
- height: 1000px;
+ height: 800px;
 }
 .fade-carousel .carousel-indicators > li {            //滚动按钮的设置
  width: 5px;
@@ -99,19 +99,19 @@
 .fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-height: 1000px;
+height: 800px;
 background-size: cover;                             //确保图片完全撑开
 background-position: center center;
 background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9t0xx0s6j31kw11xx6p.jpg);
+  background-image: url(https://ws3.sinaimg.cn/large/006tNbRwgy1fgg631iskgj31jk10ze81.jpg);
 }
 .fade-carousel .slides .slide-2 {
-background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9prpc7z3j31kw0w0e81.jpg);
+background-image: url(https://ws3.sinaimg.cn/large/006tNbRwgy1fgg64ubuqcj31jk113nc5.jpg);
 }
 .fade-carousel .slides .slide-3 {
-background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9qo8eo1oj31kw11xb2a.jpg);
+background-image: url(https://ws2.sinaimg.cn/large/006tNbRwgy1fgg65t0ugbj31jk111h5p.jpg);
 }
 
 /*  --- 响应式设置 ---  */
@@ -134,99 +134,11 @@ background-image: url(https://ws1.sinaimg.cn/large/006tNbRwgy1fg9qo8eo1oj31kw11x
 .landing-page {
 
   .background {
-    background-color: #F6F6F6;
+    background-color: #deeff5;
 
   }
 
 
-
-
-
-  // 之前的首页大图
-  // .box {
-  //   background-image: url('https://ws3.sinaimg.cn/large/006tNbRwgy1fg1psfrfhpj315o0rd7wi.jpg');
-  //   padding-top: 33px;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   padding-bottom: 50px;
-  //cc
-  //
-  //   .box-inner {
-  //       background-color: rgba(10, 15, 11, 0.69);
-  //
-  //       // margin-top: 100px;
-  //       // margin-bottom: 100px;
-  //
-  //       border-radius: 20px;
-  //       padding-left: 28px;
-  //
-  //   }
-  //
-  //   .title {
-  //       text-align: center;
-  //       margin-bottom: 45px;
-  //       letter-spacing: 0.5em;                              //拉开一点点字间距
-  //       font-weight:lighter;                                //字体粗细比默认样式缩小100磅值，让logo显得精致高级
-  //       font-size: 3.0em;
-  //       color: #d76363;
-  //       line-height: 50px;
-  //       margin-right: -12px;
-  //   }
-  //
-  //   .slogan {
-  //            color: #d76363;
-  //            letter-spacing: 1em;
-  //            font-weight:lighter;
-  //            font-size: 2.5em;
-  //            margin-bottom: 35px;
-  //            text-align: center;
-  //            margin-right: -18px;
-  //
-  //        }
-  //
-  //
-  //   .lead {
-  //       margin-bottom: 60px;
-  //       text-align: center;
-  //       color: white;
-  //       width: 100%;
-  //     }
-  //
-  //     #lead-submit {
-  //
-  //       width: 45%;
-  //       letter-spacing: 0.5em;
-  //       font-size: 1.2em;
-  //       margin-bottom: 16px;
-  //
-  //     }
-  //       }
-
-    // 中图
-        .box3 {
-          background-image: url('https://ws3.sinaimg.cn/large/006tNbRwgy1fg1psfrfhpj315o0rd7wi.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-
-
-          .box-inner {
-              background-color: rgba(10, 15, 11, 0.69);
-              border-radius: 20px;
-
-              height: 100%;
-            }
-
-          .title {
-              text-align: center;
-              letter-spacing: 0.5em;                              //拉开一点点字间距
-              font-weight:lighter;                                //字体粗细比默认样式缩小100磅值，让logo显得精致高级
-              font-size: 3.0em;
-              color: #d76363;
-              margin-top: 0px;
-              line-height: 74px;
-
-            }
-        }
 
        // 底图
         .box2 {
