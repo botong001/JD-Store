@@ -40,11 +40,15 @@
 
                 </li>
 
+
+
+
              </ul>
 
 
 
             <ul class="nav navbar-nav navbar-right">
+
                <li>
                 <%= link_to carts_path do %>
                  购物车 <i class="fa fa-shopping-cart"></i> ( <%= current_cart.products.count %> )
@@ -82,10 +86,6 @@
            <ul class="navbar-form navbar-right" >
            <ol> <%= render :partial => "products/search_bar"  %></ol>
           </ul>
-
-
-
-
 
           </div>
       </div>

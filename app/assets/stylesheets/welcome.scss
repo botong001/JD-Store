@@ -46,8 +46,10 @@
            transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {                                            //h1标题设置
- font-size: 4em;
+ font-size: 5em;
  font-weight: 500;
+ letter-spacing: 0.7em;
+ color: #1abc9c;
  margin: 10px;
  padding: 0;
 }
@@ -111,7 +113,7 @@ background-repeat: no-repeat;
 background-image: url(https://ws3.sinaimg.cn/large/006tNbRwgy1fgg64ubuqcj31jk113nc5.jpg);
 }
 .fade-carousel .slides .slide-3 {
-background-image: url(https://ws2.sinaimg.cn/large/006tNbRwgy1fgg65t0ugbj31jk111h5p.jpg);
+background-image: url(https://ws3.sinaimg.cn/large/006tNbRwgy1fgg7d730tej31kw0zwe81.jpg);
 }
 
 /*  --- 响应式设置 ---  */
