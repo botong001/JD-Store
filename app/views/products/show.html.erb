@@ -81,7 +81,7 @@
                                                 <%= link_to('收藏'.html_safe,join_product_path(@product), method: :post, class: "btn btn-xs btn-default" ) %>
                                             <% end %>
                                                <span>（<%= @product.collects.count %>人气）</span>
-
+                                            <%= social_share_button_tag(@product.title, :allow_sites => %w(facebook  google_plus wechat weibo), :image => @product.image.medium.url , desc: @product.description) %>
                                     </div>
 
                             </div>

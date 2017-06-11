@@ -18,6 +18,11 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @comments = @product.comments.recent.paginate(:page => params[:page], :per_page => 5)
     @comment = Comment.new
+
+    # 页面分享功能代码
+    set_page_title       @product.title
+    set_page_description @product.description
+    set_page_image       @product.image.thumb.url
   end
 
 

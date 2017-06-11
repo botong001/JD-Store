@@ -19,6 +19,8 @@
 //= require ripples
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
+//= require social-share-button
+//= require social-share-button/wechat
 //= require_tree .
 
 

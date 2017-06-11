@@ -73,6 +73,9 @@ gem "intercom-rails"
 # 详细地址
 gem 'china_city'
 
+# 分享页面
+gem 'social-share-button'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 # debug
