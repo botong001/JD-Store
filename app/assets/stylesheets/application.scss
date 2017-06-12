@@ -20,8 +20,7 @@
  @import "font-awesome";
  @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";                       //文本编辑器的支持样式
  @import url('https://fonts.googleapis.com/earlyaccess/notosanssc.css');   //引入google思源黑简在线字体 需要使用VPN才可生效
- @import "bootstrap-material-design";
- @import "ripples";
+
 
  //--- Footer always on the bottom---
  html {
@@ -29,81 +28,137 @@
     min-height: 100%;
   }
 
-  body {
-    // padding-top: 71px;                                  // 腾出navbar的遮挡空间
-    padding-bottom: 117px;
-    font-family: 'Noto Sans SC', sans-serif;            // google思源黑简作为主字体
-    // color: #666;                                        // 修改全站的 字体主色
-    font-size: 1.3em;
-    background-color:#deeff5;                                   // 网站所有字体缩小比例
-   a {                                                 // 所有a标签统一样式
-    //  color: #666;                                      // 链接反转的样式
-     transition: 0.5s;                                 // 鼠标移开时 0.5秒渐变
-   }
-   a:hover {
-     color: #009688;
-     transition: 0.5s;                                 // 鼠标指向时 0.5面渐变
-     text-decoration: none;                            // 移除下划线
-   }
+  /*===== 网站通用设置 ======*/
+body {
+  overflow-x: hidden; //裁切页面内容，超出视窗不显示
+  letter-spacing: 3px; //文字间距
+  font-size: 18px; //文字大小
+  padding-bottom: 117px;
+  font-family: 'Noto Sans SC', sans-serif;            // google思源黑简作为主字体
+  background-color:#deeff5;                                   // 网站所有字体缩小比例
+
+  a {
+    text-decoration:none !important; //文字连结移除底线
   }
 
-
- //---------Navbar---------
- // navbar 动态
-
-
-
-.navbar-default {
-background: rgba(0,0,0,0)!important;
-
-
-&.show_bgcolor {
-background-color: #D3D6DB!important;
-}
 }
 
- .navbar-style {
-    height: 72px;
-    background-color: rgba(0,0,0,0);
-    border-color: transparent;                         //边框颜色设置为 透明
+/*===== 基础栏位设定 ======*/
+  .width-25 {
+    width: 25%;
+  }
+
+  .width-50 {
+    width: 50%;
+  }
+
+  .width-75 {
+    width: 75%;
+  }
+
+  .width-100 {
+    width: 100%;
   }
 
 
+  /*===== Navbar 导览列 ======*/
+  .navbar-default {
+    background: rgba(0,0,0,0.5)!important;//半透明背景
 
-   .navbar-brand {
-     line-height: 50px;
-     letter-spacing: 0.5em;                      //拉开一点点字间距
-     font-weight: lighter;;                        //字体粗细比默认样式缩小100磅值，让logo显得精致高级
-     padding-left: 60px;
-     font-size: 2.5em;
-     color: #4f4948!important;
-   }
+    /* 文字连结 */
+    a {
+      color: #fff !important;
+    }
 
-   .navbar-default .navbar-brand:hover,
-   .navbar-default .navbar-brand:focus {
-     color: #7f8c8d;
-     background-color: transparent;
-   }
-  .navbar-default .navbar-nav > li > a {
-   padding: 25px 30px;
-   color: #4f4948;
+    /* 连结-鼠标效果 */
+    a:hover,
+    a:active,
+    a:focus {
+      color: #0070DE !important;
+    }
+
+    /*===== 导览列滑动特效 ======*/
+    &.show_bgcolor {
+      background-color: #D3D6DB!important; //背景颜色
+
+      /* 文字连结 */
+      a {
+        color: #000 !important;
+      }
+
+      /* 连结-鼠标效果 */
+      a:hover,
+      a:active,
+      a:focus {
+        color: #0070DE !important;
+      }
+    }
+
+
+  /*===== Logo ======*/
+  .logo-box {
+    margin-right: 15px;
+    font-size: 20px;
   }
 
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
-      color: #7f8c8d;
-      background-color: transparent;
+  /*===== Dropdown ======*/
+  .dropdown-menu{
+    background-color: #fff;
+    min-width: 175px;
+
+    /* 连结 */
+    a {
+      color: #000 !important;
+      padding: 8px 17px;
+    }
+
+    /* 连结-鼠标滑动效果 */
+    a:hover {
+      background-color: #f0f0f0;
+      color: #0070DE !important;
+    }
   }
 
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-      color: #7f8c8d;
-      background-color: #212121;
+  /* 下拉选单三角箭头 */
+  .dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+  }
+
+  /* 搜索栏 */
+.search-box {
+  padding: 1px;
+  margin-top: 9px;
+  border: solid 2px #e5e4e4;
+  border-radius: 3px;
+  background-color: #fff;
+
+
+  /* 输入框 */
+  input {
+    border: 0;
+    padding-left: 10px;
+    box-shadow: none
+  }
+
+  /* 按钮 */
+  button {
+    margin: 2px 0;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+    font-size: 20px;
+    box-shadow: none
   }
 
 
-
+  }
+  }
 
 
    //---------Footer---------
@@ -214,7 +269,7 @@ background-color: #D3D6DB!important;
    .log-page {
 
     margin-top: 100px;
-    color: #03151e;
+    color: #03151e ;
     font-size: 20px;
     background-color: rgba(250, 250, 250, 0.69);//transparent;//背景颜色含透明度
     border-radius: 10px;
@@ -236,49 +291,6 @@ background-color: #D3D6DB!important;
 
 
 
-    //---搜索--
-    #custom-search-input {
-        padding: 1px;
-        border: solid 2px #e5e4e4;
-        border-radius: 3px;
-        background-color: #fff;
-        margin-top: 9px;
-
-    }
-
-    #custom-search-input input {
-        border: 0;
-        box-shadow: none
-    }
-
-    #custom-search-input button {
-        margin: 2px 0;
-        background: none;
-        box-shadow: none;
-        border: 0;
-        color: #666666;
-        padding: 0 8px 0 10px;
-        border-left: solid 1px #ccc
-    }
-
-    #custom-search-input button:hover {
-        border: 0;
-        box-shadow: none;
-        border-left: solid 1px #ccc
-    }
-
-    #custom-search-input .glyphicon-search {
-        font-size: 15px
-    }
-
-    /* 购物车*/
-
-    .fa-shopping-cart {
-      color: #EAEAEA;
-      margin-right: 10px; /*右边距*/
-    }
-
-
       // 固定位置的消息通知
         .alert {
           position: fixed; // 这个属性防止将内容挤下去
@@ -288,32 +300,3 @@ background-color: #D3D6DB!important;
           z-index: 10; // 让消息显示在最上面
           border-radius: 0px;
         }
-
-
-        //---------Content---------
-
-  .content-section-a {
-      padding: 50px 0;
-      background-color: #f8f8f8;
-  }
-
-  .content-section-b {
-      padding: 50px 0;
-      border-top: 1px solid #e7e7e7;
-      border-bottom: 1px solid #e7e7e7;
-  }
-
-  .section-heading-spacer {
-      float: left;
-      width: 200px;
-      border-top: 3px solid #e7e7e7;
-  }
-
-  .section-heading {
-      margin-bottom: 30px;
-  }
-
-  .lead {
-      font-size: 18px;
-      font-weight: 400;
-  }

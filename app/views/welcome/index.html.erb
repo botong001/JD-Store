@@ -1,3 +1,5 @@
+<div class="welcome-box">
+
 
 
           <!-- ↓↓↓ 大图滚动banner 代码块↓↓↓ -->
@@ -54,188 +56,170 @@
           <!-- ↑↑↑ 大图滚动banner 代码块 ↑↑↑ -->
 
 
+                          <!--===== 品牌故事 =====-->
+                  <section class="story-box">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <h1>拉祜山</h1> <!-- 品牌名称 -->
+                        <div class="short-line"></div> <!-- 分隔线 -->
+                        <div class="row">
+                          <div class="col-md-3 col-md-offset-1">
+                             <img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fgi8wbg2qfj307w06yadl.jpg" <!-- 创办人头像 1 -->
+                          </div>
+                          <div class="col-md-7">
+                            <h3>李砚晶</h3> <!-- 创办人姓名 -->
+                            <p>遵循创造和可持续的发展原则，以生命最原始的状态，用智慧连通万物，为全球消费者提供更高品质的原生态食品以及健康生活享受，并致力于成为拉祜民族文化的传承者</p> <!-- 创办人介绍 -->
+                          </div>
+                        </div>
+                        <hr />
+
+                      </div>
+                    </div>
+                  </section>
 
 
-     <div class="landing-page ">
-
-        <div class=" background">
-
-
-
-
-                                         <!-- 第一版的首页大图 -->
-                                            <!-- <div class="box">
-                                            <div class="box-inner">
-                                                  <div class="container">
-                                                     <div class="row ">
-                                                         <div class="col-md-8 col-md-offset-2 text-center">
-
-                                                             <h1 class="title">野阔</h1>
-                                                                  <p class="slogan">拉祜山</p>
-                                                                  <p class="row lead">
-
-                                                                        <%= link_to '寻山珍', products_path, class: 'btn btn-danger btn-lg', id:"lead-submit" %>
-                                                                  </p>
-                                                           </div>
-                                                       </div>
-                                                  </div>
-                                               </div>
-                                          </div> -->
-
-
-
-
-                                          <br>
-                                          <br>
-                                          <br>
-                                          <br>
-                                          <br>
-                                          <br>
-
-
-                                    <div class="container ">
-                                        <div class="section text-center">
-                                            <h2 class="title">推荐</h2>
-                                            <br>
-                                            <br>
-                                            <br>
-                                              <div class="row">
-
-                                                <div class="col-xs-6 col-md-6">
-                                                  <div class="team-player">
-                                                    <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/2' do %><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg4lvbq4qwj30fn0figrn.jpg" alt="Thumbnail Image" class="img-raised img-circle" width="250" height="250"><% end %>
-                                                    <h4 class="title">冬茸</h4>
-
-                                                  </div>
-                                                </div>
-
-                                                <div class="col-xs-6 col-md-6">
-                                                  <div class="team-player">
-                                                    <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/3' do %><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fg4miwmrdnj3046049js7.jpg" alt="Thumbnail Image" class="img-raised img-circle" width="250" height="250"><% end %>
-                                                    <h4 class="title">竹荪</h4>
-
-                                                  </div>
-                                                </div>
-
-
-
+                        <!--===== 推荐商品 =====-->
+                          <section class="show-box">
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-1">
+                                <h2>推荐商品</h2> <!-- 副标题 -->
+                                <div class="short-line"></div> <!-- 分隔线 -->
+                                <div class="row">
+                                          <div class="col-md-3">
+                                              <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/2' do %>
+                                                <div class="box"><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fgi0w58sobj307i07idip.jpg" alt="Thumbnail Image" class="img-raised img-circle" ></div>
+                                                <div class="content">
+                                                     <p>冬茸</p>
                                             </div>
+                                              <% end %>
+                                          </div>
 
-                                                 <br>
-                                                 <br>
-                                                 <br>
-                                                 <br>
-
-
-
-                                            <div class="row">
-
-                                                  <div class="col-xs-6 col-md-6">
-                                                    <div class="team-player">
-                                                      <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/8' do %><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fgg4yutgqmj30fc0fewkv.jpg" alt="Thumbnail Image" class="img-raised img-circle" width="250" height="250"><% end %>
-                                                      <h4 class="title">蜂蜜</h4>
-                                                    </div>
-                                                  </div>
-
-                                                  <div class="col-xs-6 col-md-6">
-                                                    <div class="team-player">
-                                                      <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/10' do %><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg4m2u7o4zj30f90fbdmp.jpg" alt="Thumbnail Image" class="img-raised img-circle" width="250" height="250"><% end %>
-                                                      <h4 class="title">茨竹笋</h4>
-
-                                                    </div>
-                                                  </div>
-
-
+                                          <div class=" col-md-3">
+                                              <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/3' do %>
+                                                <div class="box"><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fg4miwmrdnj3046049js7.jpg" alt="Thumbnail Image" class="img-raised img-circle"  ></div>
+                                                <div class="content">
+                                                     <p>竹荪</p>
                                             </div>
-
-                               <!-- div class="section text-center" -->
-                                        </div>
-
-                                      </div>
-
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
+                                              <% end %>
+                                          </div>
 
 
-
-                                         <div class="container content-section text-center">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                          <h2 class="content-section-title">水源</h2>
-                                                          <img src="https://ws4.sinaimg.cn/large/006tNc79gy1fg4of3xzyyj30jj0c6h0p.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                                                          <p class="content-section-slogan">依附于澜沧江（湄公河）西岸，素有“拉祜 山乡，边陲宝地”之美誉，水资源丰富;该流域多样的地貌特征和气候特征，是全球生物物种高富集区和世界级基因库</p>
-                                                     </div>
-
-                                                    <div class="col-md-4">
-                                                          <h2 class="content-section-title">产地</h2>
-                                                          <img src="https://ws3.sinaimg.cn/large/006tNc79gy1fg4o89wdhnj30ax07rjyh.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                                                          <p class="content-section-slogan">原生态绿洲,森林覆盖率超过67%，是云南“动植物王国”的缩影，全国生物多样性最丰富的地区之一，北回归线上最大的绿洲</p>
-                                                      </div>
-
-                                                      <div class="col-md-4">
-                                                            <h2 class="content-section-title">文化</h2>
-                                                            <img src="https://ws4.sinaimg.cn/large/006tNc79gy1fg4obebx9vj30je0c5gz4.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                                                            <p class="content-section-slogan">拉祜族，中国古老民族之一，以勇敢的猎虎民族、葫芦的儿女而著称，
-                                                              云南独有的15种少数民族之一;生活于大自然山水之间，淳朴善良、勤劳而勇敢</p>
-                                                        </div>
-
-                                                </div>
-
-                                        </div>
-
-
-
-
-
-
-
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-                                      <br>
-
-
-
-    <!-- div class=" background" -->
-         </div>
-
-
-
-                                      <!-- 视频的位置是固定的，不随着页面的滚动而动，然后用z-index的负数设置了离平面最远的地方，然后用landingpage的背景来覆盖视频，只留出要显示视频的那一块区域，所以放在这个位置 -->
-
-                                         <div class="box2">
-                                           <div class="box-inner">
-                                            <%#= video_tag "show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
-                                               <div class="container">
-                                                  <div class="row ">
-                                                      <div class="col-md-8 col-md-offset-2 text-center">
-                                                               <p class="row lead">
-                                                                 <%= link_to '源品', yuan_products_path, class: 'btn btn-danger btn-lg', id:"lead-submit" %> <br>
-                                                                   <%= link_to '润品', run_products_path, class: 'btn btn-danger btn-lg', id:"lead-submit" %><br>
-                                                                     <%= link_to '臻品', zhen_products_path, class: 'btn btn-danger btn-lg', id:"lead-submit" %>
-                                                               </p>
-                                                        </div>
-                                                    </div>
-                                               </div>
+                                          <div class=" col-md-3">
+                                              <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/8' do %>
+                                                <div class="box"><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fgg4yutgqmj30fc0fewkv.jpg" alt="Thumbnail Image" class="img-raised img-circle"  ></div>
+                                                <div class="content">
+                                                     <p>蜂蜜</p>
                                             </div>
-                                       </div>
+                                              <% end %>
+                                          </div>
+
+                                          <div class=" col-md-3">
+                                              <%= link_to 'https://stormy-spire-83428.herokuapp.com/products/10' do %>
+                                                <div class="box"><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fg4m2u7o4zj30f90fbdmp.jpg" alt="Thumbnail Image" class="img-raised img-circle" ></div>
+                                                <div class="content">
+                                                     <p>茨竹笋</p>
+                                            </div>
+                                              <% end %>
+                                          </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </section>
+
+
+                  <!--===== 服务优势 =====-->
+                  <section class="service-box">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <h2>商品特点</h2> <!-- 副标题 -->
+                        <div class="short-line"></div> <!-- 分隔线 -->
+                        <div class="row">
+                          <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="box">
+                              <%= image_tag("service_1.png") %> <!-- 图示 -->
+                              <h3>品质保证</h3> <!-- 标题 -->
+                              <p>依附于澜沧江（湄公河）西岸，素有“拉祜山乡，边陲宝地”之美誉，水资源丰富</p> <!-- 内文 -->
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="box">
+                              <%= image_tag("service_2.png") %>
+                              <h3>生态食品</h3>
+                              <p>原生态绿洲,森林覆盖率超过67%，是云南“动植物王国”的缩影，全国生物多样性最丰富的地区之一</p>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="box">
+                              <%= image_tag("service_3.png") %>
+                              <h3>安心食用</h3>
+                              <p>多样的地貌特征和气候特征，是全球生物物种高富集区和世界级基因库，造就了放心食品</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                                  <!--===== 商品分类 =====-->
+                   <section class="categories-box">
+                     <div class="row">
+                       <div class="col-md-4 category-content">
+                         <%= link_to '#' , class: "category_1" do %> <!-- 分类连结 -->
+                           <div class="category-box">
+                             <img src="https://ws3.sinaimg.cn/large/006tKfTcgy1fgidhvc2dnj30jg0jggzy.jpg" class="img-rounded" alt="Cinque Terre" > <!-- 分类图片 -->
+                           </div>
+                           <div>
+                             <h3>干货特产</h3> <!-- 分类标题 -->
+                             <p></p> <!-- 分类介绍 -->
+                           </div>
+                         <% end %>
+                       </div>
+
+                       <div class="col-md-4 category-content">
+                         <%= link_to '#' , class: "category_3" do %>
+                           <div class="category-box">
+                             <img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fgi9j013xyj30ji0jjae0.jpg" class="img-rounded" alt="Cinque Terre" >
+                           </div>
+                           <div>
+                             <h3>鲜货特产</h3>
+                             <p></p>
+                           </div>
+                         <% end %>
+                       </div>
+
+                       <div class="col-md-4 category-content">
+                         <%= link_to '#' , class: "category_2" do %>
+                           <div class="category-box">
+                             <img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fgi9eyek4ej30df0dfq5q.jpg" class="img-rounded" alt="Cinque Terre" >
+                           </div>
+                           <div>
+                             <h3>民族工艺品</h3>
+                             <p></p>
+                           </div>
+                         <% end %>
+                       </div>
+
+                     </div>
+                   </section>
+
+      <!--===== 立即购买 =====-->
+           <section class="push-box">
+           <div class="box-inner">
+               <div class="container">
+                  <div class="row ">
+                      <div class="col-md-8 col-md-offset-2 text-center">
+                               <p class="row lead">
+
+                                     <%= link_to '商品列表', products_path, class: 'btn btn-danger btn-lg', id:"lead-submit" %>
+                               </p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+          </section>
+
 
 
   <!-- div class="landing-page " -->

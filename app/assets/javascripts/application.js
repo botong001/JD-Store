@@ -15,8 +15,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap
-//= require material
-//= require ripples
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
 //= require social-share-button
